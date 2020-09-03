@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "build": {
-    "env": {
-      "CLOUDNAME": "@cloudname",
-      "API_KEY": "@api_key",
-      "API_SECRET": "api_secret",
-      "baseURL": "@base_url"
+  "functions": {
+    "api/generate.js": {
+      "memory": 3008
     }
   },
   "routes": [

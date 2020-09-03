@@ -52,6 +52,9 @@ module.exports = {
       'pages/**/*.vue',
       'plugins/**/*.js',
       'nuxt.config.js'
-    ]
+    ],
+    options: {
+      whitelist: ['md:w-1/4', 'w-1/4']
+    }
   }
 }

@@ -26,7 +26,7 @@
           </button> -->
         </div>
       </div>
-      <div v-show="loading" class="w-box h-box flex flex-col justify-center items-center border rounded-t-lg rounded-b-lg bg-gray-100">
+      <div v-show="loading" class="w-full sm:w-box h-box flex flex-col justify-center items-center border rounded-t-lg rounded-b-lg bg-gray-100">
         <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-300 w-12 h-12"></div>
         <span class="pt-5 text-gray-500 text-sm">Generating colors...</span>
       </div>
@@ -54,7 +54,7 @@
       <h2 class="text-3xl font-bold pb-5 text-center">Color palettes for TailwindCSS</h2>
       <p class="text-lg pb-5 text-gray-700 text-center italic">Customize the color theme for your TailwindCSS project <b>in 3 simple steps</b>:</p>
       <p class="text-md py-5 text-gray-800 flex justify-center">
-        <svg-icon name="palette" class="w-5 h-5 text-sea-buckthorn-500 fill-current mr-3" arial-hidden='true'/>
+        <svg-icon name="palette" class="w-10 md:w-5 h-5 text-sea-buckthorn-500 fill-current mr-3" arial-hidden='true'/>
         <span><b>Copy</b> code for a single palette, or hit "Copy all code" button for all the generated palettes. </span>
       </p>
       <button 
@@ -86,7 +86,7 @@
           />
       </div>
       <p class="text-md pt-8 pb-5 text-gray-800 flex justify-center">
-        <svg-icon name="paint-roller" class="w-5 h-5 text-sea-buckthorn-500 fill-current mr-3 mt-1" />
+        <svg-icon name="paint-roller" class="w-10 md:w-5 h-5 text-sea-buckthorn-500 fill-current mr-3 mt-1" />
         <span class="flex items-center flex-wrap">
           <span><b>Paste </b> the copied code to</span>
           <pre class="mx-2 bg-gray-300 px-2 py-1 rounded">theme.extend.colors</pre>
@@ -101,7 +101,7 @@
         </picture>
       </div>      
       <p class="text-md pb-5 text-gray-800 flex pt-8 justify-center">
-        <svg-icon name="pencil-paintbrush" class="w-5 h-5 text-sea-buckthorn-500 fill-current mr-3 mt-1 self-start" />
+        <svg-icon name="pencil-paintbrush" class="w-12 md:w-6 h-5 text-sea-buckthorn-500 fill-current mr-3 mt-1 self-start" />
         <span class="flex items-center flex-wrap">
           <span>Use it through generated <b>class selectors</b>,</span> for example 
           <pre class="mx-2 bg-gray-300 px-2 py-1 rounded">bg-cloudinary-500</pre> for setting 
@@ -147,11 +147,11 @@ export default {
       copied: false,
       step2: {
         regularUrl: 'https://res.cloudinary.com/mayashavin/image/upload/w_600,q_auto,f_auto/v1599156041/colors_generator/paste',
-        mobUrl: 'https://res.cloudinary.com/mayashavin/image/upload/w_300,q_auto,f_auto/v1599156041/colors_generator/paste'
+        mobUrl: 'https://res.cloudinary.com/mayashavin/image/upload/w_400,q_auto,f_auto/v1599156041/colors_generator/paste'
       },
       step3: {
         regularUrl: 'https://res.cloudinary.com/mayashavin/image/upload/w_600,q_auto,f_auto/v1599158305/colors_generator/step3',
-        mobUrl: 'https://res.cloudinary.com/mayashavin/image/upload/w_300,q_auto,f_auto/v1599158305/colors_generator/step3'
+        mobUrl: 'https://res.cloudinary.com/mayashavin/image/upload/w_400,q_auto,f_auto/v1599158305/colors_generator/step3'
       }
     }
   },

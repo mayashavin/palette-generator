@@ -4,7 +4,7 @@
 
 > Website: <https://palette-generators.vercel.app/>
 
-![Palette generator banner](https://res.cloudinary.com/mayashavin/image/upload/w_500,q_auto,f_auto/v1599167283/colors_generator/palette-generator)
+![Palette generator banner](https://res.cloudinary.com/mayashavin/image/upload/w_700,q_auto,f_auto/v1599167283/colors_generator/palette-generator)
 
 ## Features
 

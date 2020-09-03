@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <header class="py-3 px-8 flex justify-between items-center">
+    <header class="py-3 sm:px-8 flex justify-between items-center">
       <div class="flex items-center">
         <img
           alt="Color generator logo" 
