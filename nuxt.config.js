@@ -25,7 +25,7 @@ export default {
         hid: 'twitter:image',
         name: 'twitter:image',
         content:
-          'https://res.cloudinary.com/mayashavin/image/upload/q_auto,f_auto/v1599115565/colors_generator/logo_transparent_background'
+          'https://res.cloudinary.com/mayashavin/image/upload/q_auto,f_auto/v1599115565/colors_generator/palette-generator'
       },
       // Twitter Card
       {
@@ -63,7 +63,7 @@ export default {
         hid: 'og:image',
         property: 'og:image',
         content:
-          'https://res.cloudinary.com/mayashavin/image/upload/q_auto,f_auto/v1599115565/colors_generator/logo_transparent_background'
+          'https://res.cloudinary.com/mayashavin/image/upload/q_auto,f_auto/v1599115565/colors_generator/palette-generator'
       }
     ],
     link: [
