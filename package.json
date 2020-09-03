@@ -1,0 +1,26 @@
+{
+  "name": "palette-generators",
+  "description": "Generate color palettes from images and use in TailwindCSS",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "serve": "nuxt serve",
+    "now-build": "yarn generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/svg-sprite": "^0.4.12",
+    "cloudinary": "^1.23.0",
+    "color-namer": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "get-image-colors": "^2.0.1",
+    "nuxt": "^2.14.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^2.0.0"
+  }
+}
