@@ -1,4 +1,16 @@
-# palette-generators
+# Palette Generators from image
+
+> Generate color palette from image to use in TaiwindCSS
+
+> Website: <https://palette-generators.vercel.app/>
+
+![Palette generator banner](https://res.cloudinary.com/mayashavin/image/upload/w_500,q_auto,f_auto/v1599167283/colors_generator/palette-generator)
+
+## Features
+
+1. Detect and generate predominant colors of a given image.
+2. Generate related palette for each color according to TailwindCSS style.
+3. Copy & paste the palette code to use in TailwindCSS
 
 ## Build Setup
 
