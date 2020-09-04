@@ -8,7 +8,7 @@
       </div>
       <nav class="flex items-center">
         <!-- <a class="mx-2 text-gray-700">Documentation</a> -->
-        <a aria-label="Github" class="mx-2" href="https://github.com/mayashavin" rel="noopener noreferrer" target="_blank">
+        <a aria-label="Github" class="mx-2" href="https://github.com/mayashavin/palette-generator/" rel="noopener noreferrer" target="_blank">
           <svg-icon name="github" class="w-6 text-gray-700 fill-current h-6 hover:text-sea-buckthorn-600"/>
         </a>
         <a aria-label="Twitter" class="mx-2" href="https://twitter.com/MayaShavin" rel="noopener noreferrer" target="_blank">
