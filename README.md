@@ -12,6 +12,10 @@
 2. Generate related palette for each color according to TailwindCSS style.
 3. Copy & paste the palette code to use in TailwindCSS
 
+## Technologies
+
+Nuxt.js, TailwindCSS, Vercel
+
 ## Build Setup
 
 ```bash
