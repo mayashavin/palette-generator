@@ -2,7 +2,7 @@
 
 > Generate color palette from image to use in TaiwindCSS
 
-> Website: <https://palette-generators.vercel.app/>
+> Website: <https://colorgen.dev/>
 
 ![Palette generator banner](https://res.cloudinary.com/mayashavin/image/upload/w_700,q_auto,f_auto/v1599167283/colors_generator/palette-generator)
 
