@@ -39,7 +39,7 @@
           <div 
             v-for="(color, index) in demo.colors"
             :key="color.main.hex"          
-            :class="`w-1/${demo.colors.length}`"
+            :class="`${demo.colors.length > 1 ? `w-1/${demo.colors.length}` : 'w-full'}`"
           >
             <div class="h-full" :class="getBorderClass(index)" :style="`background-color:${color.main.hex};`" />
             <div class="py-4 text-sm">
@@ -165,7 +165,8 @@ export default {
   },
   methods: {
     getBorderClass(index) {
-      if (index === 0) return "rounded-bl-lg"
+      if(this.demo.colors.length === 1) return "rounded-lg"
+      else if (index === 0) return "rounded-bl-lg"
       else if (index === this.demo.colors.length - 1) return "rounded-br-lg"
       else return ""
     },

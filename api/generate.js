@@ -32,8 +32,15 @@ const generate = async (req, res) => {
   const mainColors = predominant.length > 4 ? predominant.slice(0, 4) : predominant;
 
   if (colors) {
+    const names = {}
     return res.json({
-      colors: mainColors.map(color => {
+      colors: mainColors.filter(color => {
+        const name = colorNamer(color).ntc[0].name
+        if(!names[name]) {
+          names[name] = true
+          return true
+        }
+      }).map(color => {
         const main = {
           name: colorNamer(color).ntc[0].name,
           hex: color,
