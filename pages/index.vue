@@ -70,7 +70,7 @@
         <div
           v-for="color in demo.colors"
           :key="color.main.hex"          
-          :class="`md:w-1/${demo.colors.length}`"
+          :class="`${demo.colors.length > 1 ? `md:w-1/${demo.colors.length}` : 'md:w-full'}`"
         >
           <tailwind-palette :color="color" class="text-sm m-1" />
           <tailwind-code :palette="color.code" :name="color.main.hex" class="text-sm m-1" />
