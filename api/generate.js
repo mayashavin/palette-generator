@@ -31,32 +31,32 @@ const generate = async (req, res) => {
 
   const mainColors = predominant.length > 4 ? predominant.slice(0, 4) : predominant;
 
-  if (colors) {
-    return res.json({
-      colors: mainColors.map(color => {
-        const main = {
-          name: colorNamer(color).ntc[0].name,
-          hex: color,
-          text: getTextColor(color)
-        };
+  const ccolors = mainColors.reduce((filteredColors, color) => {
+    if (filteredColors[colorNamer(color).ntc[0].name]) return filteredColors;
 
-        const palettes = generatePalettes(main);
-        
-        return {
-          main,
-          palettes,
-          code: getCodes(main, palettes)
-        }
-      }),
-      delivery_url: req.body.publicId ? `https://res.cloudinary.com/${process.env.CLOUDNAME}/image/upload/w_500,q_auto,f_auto/v${file.version}/${req.body.publicId}` : req.body.file
-    })
-  }
+    const main = {
+      name: colorNamer(color).ntc[0].name,
+      hex: color,
+      text: getTextColor(color)
+    };
+
+    const palettes = generatePalettes(main);
+
+    filteredColors[colorNamer(color).ntc[0].name] = {
+      main,
+      palettes,
+      code: getCodes(main, palettes)
+    };
+
+    return filteredColors;
+  }, {});
 
   return res.json({
-    colors: [],
-    delivery_url: req.body.publicId || req.body.file
-  })
+    colors: ccolors,
+    delivery_url: req.body.publicId
+      ? `https://res.cloudinary.com/${process.env.CLOUDNAME}/image/upload/w_500,q_auto,f_auto/v${file.version}/${req.body.publicId}`
+      : req.body.file
+  });
+};
 
-}
-
-module.exports = generate
+module.exports = generate;
